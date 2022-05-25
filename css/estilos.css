@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: #20caf0;
+background-image: linear-gradient(315deg, #20cef5 0%, #8417ba 54%);
+
+}
+
+
+/*-------- Barra de Navegacion HEADER --------*/
+
+.navbar{
+    background-color: #9C00EB;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+    
+    
+}
+header{
+    border-radius: 0px 0px 15px 15px;
+    position: sticky;
+    top: 0;
+    border: 2px solid antiquewhite;
+    border-top: none;
+    box-shadow: 10px 10px 12px 0 black;
+}
+
+.navbar .logo{
+    width: 80px;
+    height: auto;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.navbar .menu a:hover{
+    color: antiquewhite;
+    font-weight: bold;
+    
+}
+
+.navbar .menu-bar{
+    display: none;
+    list-style: none;
+    font-size: 2em;
+}
+
+.navbar .menu-bar .desplegar{
+    display: none;
+}
+
+.navbar .menu-bar li i{
+    color: #ffffff;
+}
+
+.navbar .menu-bar:hover .desplegar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 3px;
+}
+
+.navbar .menu-bar:hover .fa-bars{
+    color: antiquewhite;
+}
+
+
+
+/*--- Secion indumentaria de academia ---*/
+
+.navbar .compra{
+    cursor: pointer;
+    grid-column: 8 / 9;
+    color: #fff;
+}
+
+.navbar .compra i:hover{
+    color: antiquewhite;
+    font-size: 20px
+}
+
+/*-------- Contenido MAIN --------*/
+
+main {
+    /*
+    background-image: url(../imagenes/purple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+    height: ;
+    height: 750px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+
+
+}
+
+.contenidoPrincipal{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.contenidoPrincipal h1{
+    margin: 5px 10px;
+    font-size: 4rem;
+    color: antiquewhite;
+}
+
+.contenidoPrincipal p{    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin: 10px;
+    color: antiquewhite;
+    
+    
+
+}
+
+.directoraSidebar{
+    grid-column: 3 / 4 ;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.directoraSidebar img{
+    height: 50vh;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: 14px 14px 15px 0 black;
+}
+
+.directoraSidebar h3{
+    text-align: center;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+
+.galeria{
+    
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20vh;
+    object-fit: contain;
+    margin: 15px;
+}
+
+.galeria img, .festival img{
+    border-radius: 20px;
+    border: 2px double antiquewhite;
+    box-shadow: 10px 10px 12px 0 black;
+}
+
+.festival{
+    
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    object-fit: contain;
+    margin: 15px;
+}
+
+
+
+
+/*-------- FOOTER Redes Sociales --------*/
+
+
+
+footer .footerGrid{
+    height: 200px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+footer .contactoRedes{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 2rem;
+}
+
+.redes{
+
+    Display: flex;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2rem;
+      
+}
+.icon{
+    width: 10vh;
+        
+}
+
+
+/*-------- ACTIVIDADES PAGE --------*/
+
+.actividades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+
+}
+
+.actividades img{
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+    box-shadow: 5px 5px 8px 0 black;
+}
+
+.actividades p{
+    padding: 10px;
+}
+
+
+/*-------- Medias Querys --------*/
+
+@media screen and (max-width: 1280px){
+    .contenidoPrincipal h1{
+        font-size: 3rem;
+    }
+
+    .contenidoPrincipal p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1010px){
+    main{
+        height: 160vh;
+    max-width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    
+    }
+    
+    .contenidoPrincipal{
+        grid-column: 1 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+ text-align: center;
+    }
+
+    .directoraSidebar{
+        grid-column: 1 / 4 ;
+        grid-row: 2 / 3;
+
+    }
+
+    .galeria{
+        grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    }
+
+    .festival{
+        grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    }
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    
+
+    
+
+    
+
+
+/*-------- Barra a Hamburguesa --------*/
+
+    .navbar{
+        position: relative;
+    }
+
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 7 / 8;
+        cursor: pointer;
+        
+    }
+
+    .navbar .menu-bar:hover .desplegar{
+        display: block;
+        position: absolute; 
+        background-color: #9C00EB;
+        list-style: none; 
+        text-decoration: none;
+        
+        
+            
+    }
+    
+    .navbar .menu-bar:hover .desplegar a:hover{
+        font-weight: bold;
+        color: antiquewhite;
+    }
+    
+
+    .navbar .menu{
+        display: none;
+    }
+
+
+}
