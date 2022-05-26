@@ -104,14 +104,14 @@ header{
 
 /*-------- Contenido MAIN --------*/
 
-main {
+main .mainIndex{
     /*
     background-image: url(../imagenes/purple.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     */
-    height: ;
+    
     height: 750px;
     padding: 20px;
     display: grid;
@@ -245,13 +245,24 @@ footer .contactoRedes{
 
 /*-------- ACTIVIDADES PAGE --------*/
 
-.actividades{
+.contenedorDeActividades{
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px;
+    text-align: center;
 
 }
+
+
+
+.actividades h3{
+    font-size: 45px;
+    color: antiquewhite;
+    text-align: center;
+}
+
 
 .actividades img{
     border-radius: 20px;
@@ -260,7 +271,9 @@ footer .contactoRedes{
 }
 
 .actividades p{
+    font-family: 'Permanent Marker', cursive;
     padding: 10px;
+    color: antiquewhite;
 }
 
 
